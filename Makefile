@@ -29,6 +29,9 @@ CPP  = g++
 CC   = gcc
 WINDRES = windres
 DLLTOOL = dlltool
+RM = rm -f
+MKDIR = mkdir -p
+
 BIN  = bin/png2bestpal$(EXEEXT)
 LIBS =
 OBJS = \
@@ -57,6 +60,9 @@ RM = rm -f
 .PHONY: all all-before all-after clean clean-custom
 
 all: all-before $(BIN) all-after
+
+all-before:
+	$(MKDIR) obj bin
 
 clean: clean-custom
 	-${RM} $(OBJS) $(BIN) $(LIBS)
