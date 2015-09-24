@@ -20,11 +20,13 @@
 #define PNG2BESTPAL_VERSION_H
 
 /* Version definitions */
-#define VER_MAJOR         1
-#define VER_MINOR         0
-#define VER_RELEASE       0
-#define VER_BUILD         1
-#define VER_STRING        "1.0.0.1"
+#include "../obj/ver_defs.h"
+//#define VER_MAJOR         1
+//#define VER_MINOR         2
+//#define VER_RELEASE       3
+//#define VER_BUILD         4
+//#define VER_STRING        "1.2.3.4"
+
 /* Program name, copyrights and file names */
 #define PROGRAM_NAME      "Png2bestPal"
 #define PROGRAM_FULL_NAME "Best 8bpp palette selector for a series of PNG files"
